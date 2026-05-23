@@ -1,0 +1,33 @@
+---
+interface Props {
+  headline?: string;
+  highlight?: string;
+  description?: string;
+  buttonLabel?: string;
+  buttonHref?: string;
+}
+
+const {
+  headline = 'Ready to launch',
+  highlight = 'your idea?',
+  description = 'Take the first step. Replace the copy, add your content, and ship it today.',
+  buttonLabel = 'Get started',
+  buttonHref = '#',
+} = Astro.props;
+---
+
+<section id="cta" class="relative mx-auto max-w-5xl px-6 py-24">
+  <div class="relative overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-white/[0.04] to-white/[0.02] p-12 text-center sm:p-20">
+    <div class="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_50%_0%,rgba(139,92,246,0.25),transparent_60%)]"></div>
+    <h2 class="text-4xl font-bold tracking-tight sm:text-5xl">
+      {headline} <span class="gradient-text">{highlight}</span>
+    </h2>
+    <p class="mx-auto mt-6 max-w-xl text-lg text-slate-400">
+      {description}
+    </p>
+    <a href={buttonHref} class="btn-primary mt-10">
+      {buttonLabel}
+      <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+</section>
