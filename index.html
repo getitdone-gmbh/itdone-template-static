@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Acme — Make something people remember</title>
+  <meta name="description" content="Acme helps small teams ship big ideas. Replace this copy with what the site is actually about." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main">
+      <a class="brand" href="index.html">Acme<span class="brand-dot">.</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Menu">
+        <span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a class="btn btn-small" href="#cta">Get started</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero container">
+      <p class="eyebrow reveal">New · Something worth announcing</p>
+      <h1 class="reveal">Make something<br /><em>people remember.</em></h1>
+      <p class="lead reveal">
+        This is the one-sentence pitch. Say what it is, who it's for and why it
+        matters — in plain words, no buzzwords.
+      </p>
+      <div class="hero-actions reveal">
+        <a class="btn" href="#cta">Get started</a>
+        <a class="btn btn-ghost" href="#features">See how it works</a>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features container" id="features">
+      <h2 class="section-title reveal">Three reasons to care</h2>
+      <div class="grid">
+        <article class="card reveal">
+          <span class="card-index">01</span>
+          <h3>First benefit</h3>
+          <p>One concrete thing visitors get. Keep it short, specific and honest — one idea per card.</p>
+        </article>
+        <article class="card reveal">
+          <span class="card-index">02</span>
+          <h3>Second benefit</h3>
+          <p>Another concrete thing. Prefer outcomes over features: what changes for the visitor?</p>
+        </article>
+        <article class="card reveal">
+          <span class="card-index">03</span>
+          <h3>Third benefit</h3>
+          <p>And a third. If there are more than three, pick the three strongest — this is a pitch, not a manual.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- About / split section -->
+    <section class="about container" id="about">
+      <div class="about-inner reveal">
+        <h2 class="section-title">A short story</h2>
+        <p>
+          Two or three sentences of background: who is behind this, why it exists,
+          what makes it different. People trust people — write like one.
+        </p>
+      </div>
+    </section>
+
+    <!-- Call to action -->
+    <section class="cta container" id="cta">
+      <div class="cta-band reveal">
+        <h2>Ready when you are.</h2>
+        <p>One final nudge and a single, obvious action.</p>
+        <a class="btn btn-invert" href="mailto:hello@example.com">Contact us</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year">2026</span> Acme</span>
+      <span class="footer-fine">Built with ITDone</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
